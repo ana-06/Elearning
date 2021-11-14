@@ -1,0 +1,88 @@
+.navbar-brand{
+font-family: 'Cabin', sans-serif;
+font-family: 'Irish Grover', cursive;
+font-size: 2em;
+font-weight: bold;
+color: #fff;
+}
+.custom-nav .custom-nav-item a{
+    color: #fff !important;
+}
+/* Giving hover effect to the navigation bar */
+.custom-nav-item:hover{
+    background-color: #E9BD43;
+    border:steelblue 1px;
+    border-radius: 10px;
+}
+
+.remove-vid-marg{
+    margin: 0px;
+    padding: 0px;
+}
+.vid-parent{
+    position: relative;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+
+.video-overlay {
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:azure; 
+  z-index: 1;
+  opacity: 2; 
+   
+}
+
+.vid-content{
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 35%;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    
+    background-color:gray;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.9;
+
+
+}
+
+.bottom-banner{
+    color: #fff;
+    padding: 10px;
+
+}
+/* To get the address info */
+.stripe{
+    background-image: linear-gradient(240deg, #888484, #363433 );
+    padding: 3rem;
+    height: 13rem;
+    margin-top: 4rem;
+    transform: rotate(10deg);
+    z-index: -5;
+}
+
+@media  screen and (min-width: 0px) and (max-width: 700px) {
+    .my-content,
+    .txt-banner{
+        display: none;
+    }
+    /* to modify the get started button */
+    .vid-content
+    {
+      top: 12%;
+      left: 60%;
+      
+    }
+}
